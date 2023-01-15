@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Scripts of the page  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <!-- Styles of the page -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');body{ font-family: 'Russo One', sans-serif}</style>
+    <link rel="icon" href="./icone.png" sizes="480x256"></link>
+    <title>Xandyy.dev</title>
+</head>
+<body class="bg-[#2C2C2C] flex flex-col">
+
+    <!-- Nav Bar -->
+    <header class="bg-[#2C2C2C] h-auto flex justify-between px-8 border-b-2 rounded">
+        <img src="icone.png" class="w-20 flex">
+        
+        <nav class=" flex justify-around">
+            <ul class="flex flex-row space-x-5 text-white py-3">
+                <li>
+                    <a href="#">Sobre Mim</a>
+                </li>
+
+                <li>
+                    <a href="#">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="#">Habilidades</a>
+                </li>
+
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   
+    
+    <!-- Content -->
+    <main>
+
+        <!-- About me -->
+        <section class="container about__me border my-10 mx-auto">
+            <h2 class="text-3xl">SOBRE MIM</h2>
+            <div class="about bg-[#212121] bg-opacity-50 flex justify-around border rounded-lg my-10 px-5 ">
+                
+                <div class=" about-me-text border bg-[#3E065F]">
+                    <p>TESTE</p>
+                </div>
+                <div class="perfil-card border bg-[#3E065F]">
+                    <p>TESTE</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="container projects border my-10 mx-auto">
+            <h2 class="text-3xl">PROJETOS</h2>
+            <div class="bg-[#212121] bg-opacity-0  flex justify-around border rounded-lg my-10 px-5 ">
+                
+                <div class="border bg-[#3E065F]">
+                    <p>TESTE</p>
+                </div>
+                <div class="border bg-[#3E065F]">
+                    <p>TESTE</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="container bg-[#212121] ability my-10 mx-auto px-7 py-3">
+            <h2 class="text-3xl text-white">HABILIDADES</h2>
+            <div class=" bg-opacity-50 flex justify-around rounded-lg px-5 py-8 ">
+                
+                <!-- Back-End -->
+                <div class="h-[400px] space-y-24">
+
+                    <h2 class="text-center text-white">BACK-END</h2>
+                    <div class="flex flex-row space-x-6 ">   
+                        <div class="">
+                            <img alt="git-logo" src="./image/git_logo.png">
+                            <p class="text-center text-white">Git</p>
+                        </div>
+                        <div class="">
+                            <img alt="python-logo" src="./image/python_logo.png">
+                            <p class="text-center text-white">Python</p>
+                        </div>
+                        <div class="">
+                            <img alt="django-logo" src="./image/django_logo.png">
+                            <p class="text-center text-white">Django</p>
+                        </div>
+                        
+                        <div class="">
+                            <img alt="docker-logo" src="./image/docker_logo.png">
+                            <p class="text-center text-white">Docker</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Front-End -->
+                <div class="space-y-24">
+                    <h2 class="text-center text-white">FRONT-END</h2>
+                    
+                    <div class="flex flex-row space-x-6">   
+                        <div class="">
+                            <img alt="html-logo" src="./image/html_logo.png">
+                            <p class="text-center text-white">Html</p>
+                        </div>
+                        <div class="">
+                            <img alt="tailwind-logo" src="./image/tailwind_logo.png">
+                            <p class="text-center text-white">Tailwind</p>
+                        </div>
+                        <div class="">
+                            <img alt="javascript-logo" src="./image/js_logo.png">
+                            <p class="text-center text-white">Javascript</p>
+                        </div>
+                        
+                        <div class="">
+                            <img alt="react-logo" src="./image/react_logo.png">
+                            <p class="text-center text-white">React</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="container contact my-10 mx-auto h-[230px]">
+            
+            <div class="bg-[#212121] bg-opacity-0 flex justify-around rounded-lg my-10 px-5 ">
+                
+                <div class="space-y-4">
+                    <h2 class="text-white text-center">Entre em Contato</h2>
+                    <div>
+                        <h3 class="text-white text-center">me@xandyy.dev</h3>
+                        <h3 class="text-white text-center">(62)99238-3814</h3>
+                    </div>
+                    
+                </div>
+
+
+                <form class= "bg-[#3E065F]">
+                    <div class=" flex flex-row space-x-5">
+                        <div class="">
+                            <label  for="Nome">
+                                <h3>Nome</h3>
+                                <input type="text" placeholder="Nome Completo">
+
+                            </label>
+                            
+                        </div>
+                        <div>
+                            <label for="Email">
+                                <h3>Email</h3>
+                                <input type="email" placeholder="example.@example.com">
+                            </label>
+                            
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <h4>Mensagem</h4>
+                        <textarea type="text" size="50" placeholder="Escreva sua mensagem..."></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+            
+        
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#3E065F] flex justify-between px-8 py-5  border-t rounded-t-lg">
+        
+        <!-- Footer Logo  -->
+        <div class="w-24 py-5">
+            <img alt="logo" src="icone.png" class="">
+        </div>
+
+        <!-- Social Icons -->
+
+        <div class="flex flex-row  space-x-5 py-4">
+            <!-- Instagram Logo -->
+            <a href="https://www.instagram.com/xandy_tradicional/">
+                <img alt="insta-logo" class="logo__instagram w-16" src="./image/instagram_logo.png"></img>
+            </a>
+
+            <a href="https://github.com/Zander404">
+                <img alt="git-logo" class="logo__github w-16" src="./image/github_logo.png"></img>
+            </a>
+
+            <a href="https://www.linkedin.com/in/alexandre-arthur-30/">
+                <img alt="linkedin-logo" class="logo__linkedin w-16" src="./image/linkedin_logo.png"></img>
+            </a>
+
+        </div>
+
+        <!-- Create by   -->
+        <div class=" w-36 flex-row text-center text-lg">
+            <h2 class="text-center text-4xl text-white"> Create by: </h2>
+            <h3 class="text-center text-3xl text-white"> Xandyy </h3>
+
+        </div>
+
+    </footer>
+    
+
+</body>
+
+
+
+</html>
