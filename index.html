@@ -12,12 +12,12 @@
     <!-- Styles of the page -->
     <style>@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');body{ font-family: 'Russo One', sans-serif}</style>
     <link rel="icon" href="./icone.png" sizes="480x256"></link>
-    <title>Xandyy.dev</title>
+    <title>Xandindto's</title>
 </head>
 <body class="bg-[#2C2C2C] flex flex-col">
 
     <!-- Nav Bar -->
-    <header class="bg-[#2C2C2C] h-auto flex justify-between px-8 border-b-2 rounded">
+    <header class="bg-[#2C2C2C] h-auto flex justify-between px-8 border-b-2 rounded ">
         <img src="icone.png" class="w-20 flex">
         
         <nav class=" flex justify-around">
@@ -46,45 +46,62 @@
     <main>
 
         <!-- About me -->
-        <section class="container about__me border my-10 mx-auto">
-            <h2 class="text-3xl">SOBRE MIM</h2>
-            <div class="about bg-[#212121] bg-opacity-50 flex justify-around border rounded-lg my-10 px-5 ">
-                
-                <div class=" about-me-text border bg-[#3E065F]">
-                    <p>TESTE</p>
+        <section class="container bg-[#212121] about__me my-10 mx-auto">
+            <h2 class="text-3xl text-white">SOBRE MIM</h2>
+            <div class="about bg-[#212121] bg-opacity-50 flex justify-around rounded-lg my-10 px-5 ">
+
+                <!-- Description About Me  -->
+                <div class=" about-me-text border rounded-lg bg-[#3E065F]">
+                    <p class="">Não sei escrever sobre mim porque isso é complicado skksksk (cada risada é uma lágrima)</p>
                 </div>
-                <div class="perfil-card border bg-[#3E065F]">
-                    <p>TESTE</p>
+
+                <!-- Profile Card -->
+                <div class="perfil-card border rounded-lg flex flex-col bg-[#3E065F] justify-center p-10 space-y-3 text-center">
+                    <img class=" px-10" src="./image/profile_foto.png">
+                    <p class="text-white text-2xl text-center">Alexandre Arthur</p>
+                    <p class="text-white">19 anos</p>
+                    <p class="text-white">Dev Back End</p>
+                    <p class="text-white"> Ciências da Computação</p>
+                    <p class="text-white"> IFG - (Campus Anápolis) </p>
                 </div>
 
             </div>
         </section>
 
         <!-- Projetos -->
-        <section class="container projects border my-10 mx-auto">
-            <h2 class="text-3xl">PROJETOS</h2>
+        <section class="container projects border my-10 mx-auto align-middle">
+            <h2 class="text-3xl text-white">PROJETOS</h2>
             <div class="bg-[#212121] bg-opacity-0  flex justify-around border rounded-lg my-10 px-5 ">
-                
-                <div class="border bg-[#3E065F]">
-                    <p>TESTE</p>
-                </div>
-                <div class="border bg-[#3E065F]">
-                    <p>TESTE</p>
+
+                <!-- Card Project -->
+                <div class="">
+                    <div class="card-proj bg-black p-2 rounded-t-lg ">
+                        <img src="./image/image_placeholder.png">
+                    </div>
+                    <div class="bg-zinc-400 p-19">
+                        <p>Nome do Projeto:</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Descrição:</p>
+                        <p>Lorem Ipsum Lorem Ipsum</p>
+                    </div>
+                    <div>
+                        <a type="button">Saiba Mais </a>
+                    </div>
                 </div>
 
             </div>
         </section>
 
         <!-- Habilidades -->
-        <section class="container bg-[#212121] ability my-10 mx-auto px-7 py-3">
+        <section class="container bg-[#212121] ability my-10 mx-auto px-7 py-3 ">
             <h2 class="text-3xl text-white">HABILIDADES</h2>
             <div class=" bg-opacity-50 flex justify-around rounded-lg px-5 py-8 ">
                 
                 <!-- Back-End -->
-                <div class="h-[400px] space-y-24">
+                <div class="h-[400px] py-24">
 
                     <h2 class="text-center text-white">BACK-END</h2>
-                    <div class="flex flex-row space-x-6 ">   
+                    <div class="flex flex-row my-6 space-x-6 ">   
                         <div class="">
                             <img alt="git-logo" src="./image/git_logo.png">
                             <p class="text-center text-white">Git</p>
@@ -107,10 +124,10 @@
 
 
                 <!-- Front-End -->
-                <div class="space-y-24">
+                <div class="h-[400px] py-24">
                     <h2 class="text-center text-white">FRONT-END</h2>
                     
-                    <div class="flex flex-row space-x-6">   
+                    <div class="flex flex-row my-6 space-x-6">   
                         <div class="">
                             <img alt="html-logo" src="./image/html_logo.png">
                             <p class="text-center text-white">Html</p>
@@ -138,11 +155,11 @@
         </section>
 
         <!-- Contato -->
-        <section class="container contact my-10 mx-auto h-[230px]">
+        <section class="container contact my-10 mx-auto">
             
             <div class="bg-[#212121] bg-opacity-0 flex justify-around rounded-lg my-10 px-5 ">
                 
-                <div class="space-y-4">
+                <div class="space-y-4 py-12">
                     <h2 class="text-white text-center">Entre em Contato</h2>
                     <div>
                         <h3 class="text-white text-center">me@xandyy.dev</h3>
@@ -151,31 +168,37 @@
                     
                 </div>
 
+                <div class="-mx-28 ">
+                    <form class= "rounded-md p-10">
+                        <div class=" flex flex-row space-x-5 ">
+                            <div class="">
+                                <label  for="Nome">
+                                    <h3 class="text-[#CCC6C6]">Nome</h3>
+                                    <input class="rounded-sm bg-[#343333] border-2 px-2 text-white" type="text" placeholder="Nome Completo">
 
-                <form class= "bg-[#3E065F]">
-                    <div class=" flex flex-row space-x-5">
-                        <div class="">
-                            <label  for="Nome">
-                                <h3>Nome</h3>
-                                <input type="text" placeholder="Nome Completo">
-
-                            </label>
+                                </label>
+                                
+                            </div>
+                            <div>
+                                <label for="Email">
+                                    <h3 class="text-[#CCC6C6]">Email</h3>
+                                    <input class="rounded-sm bg-[#343333] border-2 px-2 text-white" type="email" placeholder="example@example.com">
+                                </label>
+                                
+                            </div>
                             
                         </div>
                         <div>
-                            <label for="Email">
-                                <h3>Email</h3>
-                                <input type="email" placeholder="example.@example.com">
+                            <label for="Mensagem">
+                                <h4 class="text-[#CCC6C6]">Mensagem</h4>
+                                <textarea class="rounded-sm bg-[#343333] border-2 px-4 text-white" style="resize: none;" cols="44" rows="5" type="text"  placeholder="Escreva sua mensagem..."></textarea>
                             </label>
-                            
+                            <div>
+                                <button class="border bg-[#00A2E8] rounded-md"> &gtcir; Enviar &ltcir;</button>
+                            </div>
                         </div>
-                        
-                    </div>
-                    <div>
-                        <h4>Mensagem</h4>
-                        <textarea type="text" size="50" placeholder="Escreva sua mensagem..."></textarea>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
             
@@ -187,32 +210,32 @@
     <footer class="bg-[#3E065F] flex justify-between px-8 py-5  border-t rounded-t-lg">
         
         <!-- Footer Logo  -->
-        <div class="w-24 py-5">
+        <div class="w-24 ">
             <img alt="logo" src="icone.png" class="">
         </div>
 
         <!-- Social Icons -->
 
-        <div class="flex flex-row  space-x-5 py-4">
+        <div class="flex flex-row  space-x-5">
             <!-- Instagram Logo -->
             <a href="https://www.instagram.com/xandy_tradicional/">
-                <img alt="insta-logo" class="logo__instagram w-16" src="./image/instagram_logo.png"></img>
+                <img alt="insta-logo" class="logo__instagram w-14" src="./image/instagram_logo.png"></img>
             </a>
 
             <a href="https://github.com/Zander404">
-                <img alt="git-logo" class="logo__github w-16" src="./image/github_logo.png"></img>
+                <img alt="git-logo" class="logo__github w-14" src="./image/github_logo.png"></img>
             </a>
 
             <a href="https://www.linkedin.com/in/alexandre-arthur-30/">
-                <img alt="linkedin-logo" class="logo__linkedin w-16" src="./image/linkedin_logo.png"></img>
+                <img alt="linkedin-logo" class="logo__linkedin w-14" src="./image/linkedin_logo.png"></img>
             </a>
 
         </div>
 
         <!-- Create by   -->
-        <div class=" w-36 flex-row text-center text-lg">
-            <h2 class="text-center text-4xl text-white"> Create by: </h2>
-            <h3 class="text-center text-3xl text-white"> Xandyy </h3>
+        <div class=" w-24 flex-row text-center text-lg">
+            <h2 class="text-center align-text-top text-white"> Create by: </h2>
+            <h3 class="text-center text-1xl text-white"> Xandyy </h3>
 
         </div>
 
