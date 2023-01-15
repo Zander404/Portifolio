@@ -17,25 +17,25 @@
 <body class="bg-[#2C2C2C] flex flex-col">
 
     <!-- Nav Bar -->
-    <header class="bg-[#2C2C2C] h-auto flex justify-between px-8 border-b-2 rounded ">
+    <header class="bg-[#2C2C2C] h-auto flex justify-between px-8 border-b-2 rounded sticky top-0">
         <img src="icone.png" class="w-20 flex">
         
         <nav class=" flex justify-around">
             <ul class="flex flex-row space-x-5 text-white py-3">
                 <li>
-                    <a href="#">Sobre Mim</a>
+                    <a href="#sobremim" t>Sobre Mim</a>
                 </li>
 
                 <li>
-                    <a href="#">Projetos</a>
+                    <a href="#projetos">Projetos</a>
                 </li>
 
                 <li>
-                    <a href="#">Habilidades</a>
+                    <a href="#habilidades">Habilidades</a>
                 </li>
 
                 <li>
-                    <a href="#">Contato</a>
+                    <a href="#contato">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -44,10 +44,11 @@
     
     <!-- Content -->
     <main>
-
+        
         <!-- About me -->
-        <section class="container bg-[#212121] about__me my-10 mx-auto">
-            <h2 class="text-3xl text-white">SOBRE MIM</h2>
+        <p id="sobremim" class="py-2"></p>
+        <section  class="container bg-[#212121] text-white about__me my-10 px-7 py-3 mx-auto">
+            <h2 class="text-3xl text-white ">SOBRE MIM</h2>
             <div class="about bg-[#212121] bg-opacity-50 flex justify-around rounded-lg my-10 px-5 ">
 
                 <!-- Description About Me  -->
@@ -58,34 +59,83 @@
                 <!-- Profile Card -->
                 <div class="perfil-card border rounded-lg flex flex-col bg-[#3E065F] justify-center p-10 space-y-3 text-center">
                     <img class=" px-10" src="./image/profile_foto.png">
-                    <p class="text-white text-2xl text-center">Alexandre Arthur</p>
-                    <p class="text-white">19 anos</p>
-                    <p class="text-white">Dev Back End</p>
-                    <p class="text-white"> Ciências da Computação</p>
-                    <p class="text-white"> IFG - (Campus Anápolis) </p>
+                    <p class=" text-2xl text-center">Alexandre Arthur</p>
+                    <p class="">19 anos</p>
+                    <p class="">Dev Back End</p>
+                    <p class=""> Ciências da Computação</p>
+                    <p class=""> IFG - (Campus Anápolis) </p>
                 </div>
 
             </div>
         </section>
 
         <!-- Projetos -->
-        <section class="container projects border my-10 mx-auto align-middle">
-            <h2 class="text-3xl text-white">PROJETOS</h2>
-            <div class="bg-[#212121] bg-opacity-0  flex justify-around border rounded-lg my-10 px-5 ">
+        <p id="projetos" class="py-2"></p>
+        <section class="container projects my-10 mx-auto px-7 py-3 align-middle">
+            <h2 class="text-3xl text-white ">PROJETOS</h2>
+            <div class="bg-[#212121] bg-opacity-0  flex justify-around text-white rounded-lg my-10 px-5 ">
 
                 <!-- Card Project -->
-                <div class="">
-                    <div class="card-proj bg-black p-2 rounded-t-lg ">
-                        <img src="./image/image_placeholder.png">
+                <div class="w-56 rounded-t-lg">
+                    <div class="card-proj bg-[#030728] p-2 rounded-t-lg border-t border-l border-r ">
+                        <img class="w-19 px-5" src="./image/image_placeholder.png">
                     </div>
-                    <div class="bg-zinc-400 p-19">
-                        <p>Nome do Projeto:</p>
-                        <p>Lorem Ipsum</p>
-                        <p>Descrição:</p>
-                        <p>Lorem Ipsum Lorem Ipsum</p>
+                    <div class="bg-[#404065] p-19 rounded-b p-2 space-y-1">
+                        <p class="text-md ">Projeto:</p>
+                        <p class="text-sm">Lorem Ipsum</p>
+                        <p class="text-md">Descrição:</p>
+                        <p class="text-sm">Lorem Ipsum </p>
+                        <div class="text-center">
+                            <a class=" border px-2 rounded-xl bg-[#9747FF] btn text-center" type="button" href="#">Saiba Mais </a>
+                        </div>
                     </div>
-                    <div>
-                        <a type="button">Saiba Mais </a>
+                </div>
+
+                <!-- Card Project -->
+                <div class="w-56 rounded-t-lg">
+                    <div class="card-proj bg-[#030728] p-2 rounded-t-lg border-t border-l border-r ">
+                        <img class="w-19 px-5" src="./image/image_placeholder.png">
+                    </div>
+                    <div class="bg-[#404065] p-19 rounded-b p-2 space-y-1">
+                        <p class="text-md">Projeto:</p>
+                        <p class="text-sm">Lorem Ipsum</p>
+                        <p class="text-md">Descrição:</p>
+                        <p class="text-sm">Lorem Ipsum </p>
+                        <div class="text-center">
+                            <a class=" border px-2 rounded-xl bg-[#9747FF] btn text-center" type="button" href="#">Saiba Mais </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Project -->
+                <div class="w-56 rounded-t-lg">
+                    <div class="card-proj bg-[#030728] p-2 rounded-t-lg border-t border-l border-r ">
+                        <img class="w-19 px-5" src="./image/image_placeholder.png">
+                    </div>
+                    <div class="bg-[#404065] p-19 rounded-b p-2 space-y-1">
+                        <p class="text-md">Projeto:</p>
+                        <p class="text-sm">Lorem Ipsum</p>
+                        <p class="text-md">Descrição:</p>
+                        <p class="text-sm">Lorem Ipsum </p>
+                        <div class="text-center">
+                            <a class=" border px-2 rounded-xl bg-[#9747FF] btn text-center" type="button" href="#">Saiba Mais </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Project -->
+                <div class="w-56 rounded-t-lg">
+                    <div class="card-proj bg-[#030728] p-2 rounded-t-lg border-t border-l border-r ">
+                        <img class="w-19 px-5" src="./image/image_placeholder.png">
+                    </div>
+                    <div class="bg-[#404065] p-19 rounded-b p-2 space-y-1">
+                        <p class="text-md">Projeto:</p>
+                        <p class="text-sm">Lorem Ipsum</p>
+                        <p class="text-md">Descrição:</p>
+                        <p class="text-sm">Lorem Ipsum </p>
+                        <div class="text-center">
+                            <a class=" border px-2 rounded-xl bg-[#9747FF] btn text-center" type="button" href="#">Saiba Mais </a>
+                        </div>
                     </div>
                 </div>
 
@@ -93,6 +143,7 @@
         </section>
 
         <!-- Habilidades -->
+        <p id="habilidades" class="py-2"></p>
         <section class="container bg-[#212121] ability my-10 mx-auto px-7 py-3 ">
             <h2 class="text-3xl text-white">HABILIDADES</h2>
             <div class=" bg-opacity-50 flex justify-around rounded-lg px-5 py-8 ">
@@ -155,6 +206,7 @@
         </section>
 
         <!-- Contato -->
+        <p id="contato" class="py-2"></p>
         <section class="container contact my-10 mx-auto">
             
             <div class="bg-[#212121] bg-opacity-0 flex justify-around rounded-lg my-10 px-5 ">
