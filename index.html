@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <!-- Scripts of the page  -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    
+
     <!-- Styles of the page -->
     <style>@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');body{ font-family: 'Russo One', sans-serif}</style>
     <link rel="icon" href="./icone.png" sizes="480x256"></link>
@@ -18,31 +19,31 @@
 
         }
     </style>
-    
-    <title>Xandindto's</title>
+
+    <title>Xandinto's</title>
 </head>
 <body class="bg-[#2C2C2C]">
 
     <!-- Nav Bar -->
-    <header class="bg-[#2C2C2C] h-auto flex justify-between px-8 border-b-2 rounded sticky top-0">
-        <img src="icone.png" class="w-20 flex">
+    <header class="bg-[#2C2C2C] h-auto flex justify-between px-8 border-b-2 rounded sticky top-0 z-40">
+        <a href="#inicio"><img alt="logo" src="icone.png" class="w-20 flex" ></img></a>
         
         <nav class=" flex justify-around">
-            <ul class="flex flex-row space-x-5 text-white py-3">
+            <ul  class="flex flex-row space-x-5 text-white py-3">
                 <li>
-                    <a href="#sobremim" t>Sobre Mim</a>
+                    <a class="hover:text-[#9747FF]" href="#sobremim">Sobre Mim</a>
                 </li>
 
                 <li>
-                    <a href="#projetos">Projetos</a>
+                    <a class="hover:text-[#9747FF]" href="#projetos">Projetos</a>
                 </li>
 
                 <li>
-                    <a href="#habilidades">Habilidades</a>
+                    <a class="hover:text-[#9747FF]" href="#habilidades">Habilidades</a>
                 </li>
 
                 <li>
-                    <a href="#contato">Contato</a>
+                    <a class="hover:text-[#9747FF]" href="#contato">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -50,7 +51,7 @@
    
     
     <!-- Content -->
-    <main>
+    <main id="inicio">
         
         <!-- About me -->
         <p id="sobremim" class="py-2"></p>
@@ -59,18 +60,26 @@
             <div class="about bg-[#212121] bg-opacity-50 flex justify-around rounded-lg my-10 px-5 ">
 
                 <!-- Description About Me  -->
-                <div class=" about-me-text border rounded-lg bg-[#3E065F]">
-                    <p class="">Não sei escrever sobre mim porque isso é complicado skksksk (cada risada é uma lágrima)</p>
+                <div class=" about-me-text border rounded-lg bg-[#3E065F] relative px-5">
+                    <p class="break-before-auto">
+                        "Olá galera, aqui é o Xandy!"
+                        <br>
+                        Estudante de Ciências da Computação no IFG 
+                    </p>
                 </div>
 
                 <!-- Profile Card -->
                 <div class="perfil-card border rounded-lg flex flex-col bg-[#3E065F] justify-center p-10 space-y-3 text-center">
                     <img class=" px-10" src="./image/profile_foto.png">
                     <p class=" text-2xl text-center">Alexandre Arthur</p>
-                    <p class="">19 anos</p>
-                    <p class="">Dev Back End</p>
-                    <p class=""> Ciências da Computação</p>
-                    <p class=""> IFG - (Campus Anápolis) </p>
+                        19 anos
+                        <br>
+                        Dev Back End
+                        <br>
+                        Ciências da Computação
+                        <br>
+                        IFG - (Campus Anápolis) 
+                    </p>
                 </div>
 
             </div>
@@ -83,8 +92,8 @@
             <div class="bg-[#212121] bg-opacity-0  flex justify-around text-white rounded-lg my-10 px-5 ">
 
                 <!-- Card Project -->
-                <div class="w-56 rounded-t-lg">
-                    <div class="card-proj bg-[#030728] p-2 rounded-t-lg border-t border-l border-r ">
+                <div class="w-56 rounded-t-lg hover:-translate-y-5 transition duration-200">
+                    <div class="card-proj bg-[#030728] p-2 rounded-t-lg border-t border-l border-r  ">
                         <img class="w-19 px-5" src="./image/image_placeholder.png">
                     </div>
                     <div class="bg-[#404065] p-19 rounded-b p-2 space-y-1">
@@ -93,13 +102,13 @@
                         <p class="text-md">Descrição:</p>
                         <p class="text-sm">Lorem Ipsum </p>
                         <div class="text-center">
-                            <a class=" border px-2 rounded-xl bg-[#9747FF] btn text-center" type="button" href="#">Saiba Mais </a>
+                            <a class=" border px-2 rounded-xl bg-[#9747FF] hover:bg-[#6431a6] btn text-center" type="button" href="#">Saiba Mais </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card Project -->
-                <div class="w-56 rounded-t-lg">
+                <div class="w-56 rounded-t-lg hover:-translate-y-5 transition duration-200">
                     <div class="card-proj bg-[#030728] p-2 rounded-t-lg border-t border-l border-r ">
                         <img class="w-19 px-5" src="./image/image_placeholder.png">
                     </div>
@@ -109,13 +118,13 @@
                         <p class="text-md">Descrição:</p>
                         <p class="text-sm">Lorem Ipsum </p>
                         <div class="text-center">
-                            <a class=" border px-2 rounded-xl bg-[#9747FF] btn text-center" type="button" href="#">Saiba Mais </a>
+                            <a class=" border px-2 rounded-xl bg-[#9747FF] hover:bg-[#6431a6] btn text-center" type="button" href="#">Saiba Mais </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card Project -->
-                <div class="w-56 rounded-t-lg">
+                <div class="w-56 rounded-t-lg hover:-translate-y-5 transition duration-200">
                     <div class="card-proj bg-[#030728] p-2 rounded-t-lg border-t border-l border-r ">
                         <img class="w-19 px-5" src="./image/image_placeholder.png">
                     </div>
@@ -125,13 +134,13 @@
                         <p class="text-md">Descrição:</p>
                         <p class="text-sm">Lorem Ipsum </p>
                         <div class="text-center">
-                            <a class=" border px-2 rounded-xl bg-[#9747FF] btn text-center" type="button" href="#">Saiba Mais </a>
+                            <a class=" border px-2 rounded-xl bg-[#9747FF] hover:bg-[#6431a6] btn text-center" type="button" href="#">Saiba Mais </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card Project -->
-                <div class="w-56 rounded-t-lg">
+                <div class="w-56 rounded-t-lg hover:-translate-y-5 transition duration-200">
                     <div class="card-proj bg-[#030728] p-2 rounded-t-lg border-t border-l border-r ">
                         <img class="w-19 px-5" src="./image/image_placeholder.png">
                     </div>
@@ -141,7 +150,7 @@
                         <p class="text-md">Descrição:</p>
                         <p class="text-sm">Lorem Ipsum </p>
                         <div class="text-center">
-                            <a class=" border px-2 rounded-xl bg-[#9747FF] btn text-center" type="button" href="#">Saiba Mais </a>
+                            <a class=" border px-2 rounded-xl bg-[#9747FF] hover:bg-[#6431a6] btn text-center" type="button" href="#">Saiba Mais </a>
                         </div>
                     </div>
                 </div>
@@ -160,20 +169,20 @@
 
                     <h2 class="text-center text-white">BACK-END</h2>
                     <div class="flex flex-row my-6 space-x-6 ">   
-                        <div class="">
+                        <div class="hover:-translate-y-5 transition duration-200">
                             <img alt="git-logo" src="./image/git_logo.png">
                             <p class="text-center text-white">Git</p>
                         </div>
-                        <div class="">
+                        <div class="hover:-translate-y-5 transition duration-200">
                             <img alt="python-logo" src="./image/python_logo.png">
                             <p class="text-center text-white">Python</p>
                         </div>
-                        <div class="">
+                        <div class="hover:-translate-y-5 transition duration-200">
                             <img alt="django-logo" src="./image/django_logo.png">
                             <p class="text-center text-white">Django</p>
                         </div>
                         
-                        <div class="">
+                        <div class="hover:-translate-y-5 transition duration-200">
                             <img alt="docker-logo" src="./image/docker_logo.png">
                             <p class="text-center text-white">Docker</p>
                         </div>
@@ -186,20 +195,20 @@
                     <h2 class="text-center text-white">FRONT-END</h2>
                     
                     <div class="flex flex-row my-6 space-x-6">   
-                        <div class="">
+                        <div class="hover:-translate-y-5 transition duration-200">
                             <img alt="html-logo" src="./image/html_logo.png">
                             <p class="text-center text-white">Html</p>
                         </div>
-                        <div class="">
+                        <div class="hover:-translate-y-5 transition duration-200">
                             <img alt="tailwind-logo" src="./image/tailwind_logo.png">
                             <p class="text-center text-white">Tailwind</p>
                         </div>
-                        <div class="">
+                        <div class="hover:-translate-y-5 transition duration-200">
                             <img alt="javascript-logo" src="./image/js_logo.png">
                             <p class="text-center text-white">Javascript</p>
                         </div>
                         
-                        <div class="">
+                        <div class="hover:-translate-y-5 transition duration-200">
                             <img alt="react-logo" src="./image/react_logo.png">
                             <p class="text-center text-white">React</p>
                         </div>
@@ -233,7 +242,7 @@
                             <div class="">
                                 <label  for="Nome">
                                     <h3 class="text-[#CCC6C6]">Nome</h3>
-                                    <input class="rounded-sm bg-[#343333] border-2 px-2 text-white" type="text" placeholder="Nome Completo">
+                                    <input class="rounded-sm bg-[#343333] hover:bg-[#222222] border-2 px-2 text-white" type="text" placeholder="Nome Completo">
 
                                 </label>
                                 
@@ -241,7 +250,7 @@
                             <div>
                                 <label for="Email">
                                     <h3 class="text-[#CCC6C6]">Email</h3>
-                                    <input class="rounded-sm bg-[#343333] border-2 px-2 text-white" type="email" placeholder="example@example.com">
+                                    <input class="rounded-sm bg-[#343333] hover:bg-[#222222] border-2 px-2 text-white" type="email" placeholder="example@example.com">
                                 </label>
                                 
                             </div>
@@ -250,10 +259,10 @@
                         <div>
                             <label for="Mensagem">
                                 <h4 class="text-[#CCC6C6]">Mensagem</h4>
-                                <textarea class="rounded-sm bg-[#343333] border-2 px-4 text-white" style="resize: none;" cols="44" rows="5" type="text"  placeholder="Escreva sua mensagem..."></textarea>
+                                <textarea class="rounded-sm bg-[#343333] hover:bg-[#222222] border-2 px-4 text-white" style="resize: none;" cols="44" rows="5" type="text"  placeholder="Escreva sua mensagem..."></textarea>
                             </label>
                             <div>
-                                <button class="border bg-[#00A2E8] rounded-md"> &gtcir; Enviar &ltcir;</button>
+                                <button class="border bg-[#00A2E8] hover:bg-sky-700 rounded-md"> &gtcir; Enviar &ltcir;</button>
                             </div>
                         </div>
                     </form>
@@ -277,15 +286,17 @@
 
         <div class="flex flex-row  space-x-5">
             <!-- Instagram Logo -->
-            <a href="https://www.instagram.com/xandy_tradicional/">
+            <a class="" href="https://www.instagram.com/xandy_tradicional/" target="_blank" rel="noopener noreferrer">
                 <img alt="insta-logo" class="logo__instagram w-14" src="./image/instagram_logo.png"></img>
             </a>
 
-            <a href="https://github.com/Zander404">
+            <!-- Github Logo -->
+            <a class=""  href="https://github.com/Zander404" target="_blank" rel="noopener noreferrer">
                 <img alt="git-logo" class="logo__github w-14" src="./image/github_logo.png"></img>
             </a>
 
-            <a href="https://www.linkedin.com/in/alexandre-arthur-30/">
+            <!-- Linkedin Logo = -->
+            <a class="" target="_blank" href="https://www.linkedin.com/in/alexandre-arthur-30/" target="_blank" rel="noopener noreferrer">
                 <img alt="linkedin-logo" class="logo__linkedin w-14" src="./image/linkedin_logo.png"></img>
             </a>
 
